@@ -1,9 +1,16 @@
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   .features-list__item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
   }
   .features-list__icon {
     background-color: var(--background-color-light);
