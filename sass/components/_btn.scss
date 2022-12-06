@@ -1,4 +1,19 @@
 .btn {
-    font-family: inherit;
-    border: none;
+  font-family: inherit;
+  border: none;
+
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--color-blue);
+  color: var(--first-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms var(--tra-cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue-dark);
   }
+}

@@ -10,12 +10,12 @@
     background-size: cover;
     margin: 0 auto;
   }
-  .container-hero {
+  .hero__container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
   }
-  .hero-title {
+  .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -28,21 +28,7 @@
     animation-duration: 2000ms;
   }
   
-  .hero-btn {
+  .hero__btn {
     min-width: 216px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    background-color: var(--color-blue);
-    color: var(--first-btn-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     padding: 10px 32px;
-    transition: background-color 250ms var(--tra-cubic);
-
-    &:hover,
-    &:focus {
-    background-color: var(--color-blue-dark);
-    }
   }

@@ -1,16 +1,16 @@
-.works {
+.section__works {
     padding-top: 0;
   }
   
-  .works-list {
+  .work-examples {
     display: flex;
     gap: 30px;
   }
-  .works-item {
+  .work-examples__item {
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
   }
-  .works-top-text {
+  .work-examples__uptitle {
     position: absolute;
     left: 0;
     bottom: 0;

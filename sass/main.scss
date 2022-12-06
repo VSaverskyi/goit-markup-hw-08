@@ -1,10 +1,13 @@
-@import 'utils/vars';
+@import 'utils/variables';
 @import 'base/reset';
 @import 'base/common';
 @import 'utils/hide';
 @import 'components/container';
 @import 'components/btn';
 @import 'components/title';
+@import 'components/social';
+@import 'components/modal';
+@import 'components/logo';
 @import 'layouts/header';
 @import 'layouts/hero';
 @import 'layouts/features';
@@ -14,4 +17,3 @@
 @import 'layouts/footer';
 @import 'layouts/portfolio-filters';
 @import 'layouts/portfolio-projects';
-@import 'components/modal';
