@@ -1,0 +1,32 @@
+:root {
+    --main-color: #212121;
+    --color-gray: #757575;
+    --color-blue: #2196f3;
+    --color-blue-dark: #188ce8;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-footer-link: rgba(255, 255, 255, 0.6);
+    --color-portfolio-btn: #f5f4fa;
+    --background-color-dark: #2f303a;
+    --background-color-hero: rgba(47, 48, 58, 0.4);
+    --background-color-hero-second: #c4c4c4;
+    --background-color-light: #f5f4fa;
+    --background-color-white: var(--color-white);
+    --font-ral: "Raleway", sans-serif;
+    --first-logo-color: var(--color-black);
+    --second-logo-color: var(--color-blue);
+    --footer-logo-color: var(--color-white);
+    --title-color: var(--main-color);
+    --text-color: var(--color-gray);
+    --first-link-color: var(--main-color);
+    --second-link-color: var(--color-blue);
+    --first-btn-color: var(--color-white);
+    --second-btn-color: var(--main-color);
+    --hover-btn-color: var(--color-blue);
+    --social-background-color: var(--color-white);
+    --hover-social-background-color: var(--color-blue);
+    --icon-color: #afb1b8;
+    --hover-icon-color: var(--color-white);
+    --footer-social-background-color: rgba(255, 255, 255, 0.1);
+    --tra-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  }

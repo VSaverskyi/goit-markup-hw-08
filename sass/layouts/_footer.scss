@@ -1,0 +1,123 @@
+.footer {
+    background-color: var(--background-color-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* .footer a {
+    text-decoration: none;
+  } */
+  
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .footer-logo {
+    color: var(--footer-logo-color);
+  }
+  .address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+    margin-top: 20px;
+  }
+  .footer-list {
+    margin-top: 9px;
+  }
+  .footer-item:not(:first-child) {
+    margin-top: 9px;
+  }
+  .footer-link {
+    color: var(--color-footer-link);
+    transition: color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--color-blue);
+    }
+  }
+  
+  
+  .footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-logo-color);
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-link {
+    background-color: var(--footer-social-background-color);
+  }
+  
+  .footer-social-icon {
+    fill: var(--hover-icon-color);
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-label {
+    font-weight: 700;
+  }
+  .subscribe-wrap {
+    display: flex;
+    gap: 12px;
+  }
+  .subscribe-input {
+    min-width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--color-white);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover,
+    &:focus {
+    border-color: var(--color-blue);
+    outline: transparent;
+    }
+  }
+  
+  
+  .subscribe-btn {
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--color-blue);
+    color: var(--first-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    background-color: var(--color-blue-dark);
+    }
+  }
+  .subscribe-icon {
+    fill: var(--first-btn-color);
+  }
+  
