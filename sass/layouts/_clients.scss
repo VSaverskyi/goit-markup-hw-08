@@ -2,10 +2,17 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .clients__item {
-    --n: 6; /* --The number of elements */
-    width: calc((100% - (var(--n) - 1) * 30px) / var(--n));
+    --n: 2; /* --The number of elements */
+    @media screen and (min-width: 768px) {
+      --n: 3;
+    }
+    @media screen and (min-width: 1200px) {
+      --n: 6;
+    }
+    flex-basis: calc((100% - (var(--n) - 1) * 30px) / var(--n));
     height: 92px;
   }
   .clients__link {
