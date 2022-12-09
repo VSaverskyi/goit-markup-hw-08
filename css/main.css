@@ -454,10 +454,16 @@ body {
 .logo {
   font-family: var(--font-ral);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--first-logo-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__web {
@@ -473,6 +479,7 @@ body {
 }
 
 .header__container {
+  min-height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,14 +489,29 @@ body {
 }
 
 .nav-site {
-  margin-left: 93px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-site {
+    display: block;
+    min-width: 282px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-site {
+    min-width: 284px;
+    margin-left: 93px;
+  }
 }
 
 .nav-site__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-site__item {
@@ -517,19 +539,29 @@ body {
   content: "";
   height: 4px;
   width: 100%;
-  display: block;
+  display: none;
   background-color: var(--second-link-color);
   border-radius: 2px;
   left: 0;
   bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .current::after {
+    display: block;
+  }
+}
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-contacts__link {
@@ -554,6 +586,33 @@ body {
 .header-contacts__link-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mobile-btn {
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.mobile-btn__icon {
+  fill: var(--main-color);
+  -webkit-transition: fill 250ms var(--tra-cubic);
+  transition: fill 250ms var(--tra-cubic);
+}
+.mobile-btn:hover .mobile-btn__icon, .mobile-btn:focus .mobile-btn__icon {
+  fill: var(--hover-btn-color);
 }
 
 .hero {

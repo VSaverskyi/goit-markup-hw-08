@@ -5,10 +5,10 @@
   }
   .features-list__item {
     flex-basis: 100%;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       flex-basis: calc((100% - 30px) / 2);
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       flex-basis: calc((100% - 90px) / 4);
     }
   }

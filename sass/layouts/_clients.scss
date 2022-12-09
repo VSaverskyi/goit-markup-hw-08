@@ -6,10 +6,10 @@
   }
   .clients__item {
     --n: 2; /* --The number of elements */
-    @media screen and (min-width: 768px) {
+    @include tablet {
       --n: 3;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       --n: 6;
     }
     flex-basis: calc((100% - (var(--n) - 1) * 30px) / var(--n));

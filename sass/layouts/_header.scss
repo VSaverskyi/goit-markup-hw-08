@@ -2,16 +2,27 @@
     border-bottom: 1px solid #ececec;
   }
   .header__container {
+    min-height: 60px;
     display: flex;
     align-items: center;
   }
 
 .nav-site {
-  margin-left: 93px;
+  display: none;
+  @include tablet {
+    display: block;
+    min-width: 282px;
+    margin-left: 88px;
+  }
+  @include desktop {
+    min-width: 284px;
+    margin-left: 93px;
+  }
   }
   .nav-site__list {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+    // gap: 50px;
   }
   .nav-site__item {
     position: relative;
@@ -39,17 +50,23 @@
   content: "";
   height: 4px;
   width: 100%;
-  display: block;
+  display: none;
   background-color: var(--second-link-color);
   border-radius: 2px;
   left: 0;
   bottom: 0;
+  @include tablet {
+    display: block;
+  }
 }
-  
+
 .header-contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
+  @include tablet {
+    display: flex;
+  }
 }
   
   .header-contacts__link {
@@ -70,4 +87,25 @@
   .header-contacts__link-icon {
     margin-right: 10px;
     fill: currentColor;
+  }
+
+  .mobile-btn {
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: transparent;
+  }
+  .mobile-btn__icon {
+    fill: var(--main-color);
+    transition: fill 250ms var(--tra-cubic);
+    
+    .mobile-btn:hover &,
+    .mobile-btn:focus & {
+      fill: var(--hover-btn-color);
+    }
   }
