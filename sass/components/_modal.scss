@@ -22,7 +22,7 @@
     opacity: 1;
     transition: transform 600ms var(--tra-cubic), opacity 600ms var(--tra-cubic);
 
-    .backdrop.backdrop--is-hidden & {
+    .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(1.2);
       opacity: 0;
     }
@@ -187,7 +187,7 @@
   }
   
   
-  .backdrop--is-hidden {
+  .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

@@ -131,15 +131,11 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   width: 100vw;
   height: 100vh;
   background-color: var(--color-white);
-  @include mobile {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
   @include tablet {
     display: none;
   }
@@ -171,6 +167,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .mob-nav__list {
@@ -233,23 +230,29 @@
 
 .mob-social {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 4.17vw;
+  @include mobile {
+    gap: 20px;
+  }
 }
 
 .mob-social__item {
   position: relative;
 }
-.mob-social__item:not(:last-child)::after {
+.mob-social__item:not(:first-child)::before {
   content: '';
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 4.5vw;
-  height: 1px;
+  width: 1px;
+  height: 4.58vw;
+  top: calc((4.58vw - 3.75vw)/2);
+  left: -2.085vw;
+  background-color: rgba(33, 33, 33, 0.2);
   // transform: rotate(90deg);
-  margin-left: 10px;
   @include mobile {
-    width: 22px;
+    top: 2px;
+    left: -10px;
+    height: 22px;
   }
 }
 
@@ -260,6 +263,7 @@
   letter-spacing: 0.02em;
   color: var(--color-blue);
   @include mobile {
-      font-size: 18px;
-    }
+    font-size: 18px;
+    line-height: calc(22/18);
+  }
 }
