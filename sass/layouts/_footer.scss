@@ -7,20 +7,26 @@
 .footer__container {
   text-align: center;
   display: flex;
+  flex-direction: column;
+  gap: 60px;
   @include desktop {
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;
     align-items: baseline;
+    justify-content: space-between;
     text-align: start;
   }
 }
-// .footer-wrap {
-//   @include tablet {
-//     display: flex;
-//   }
-//   @include desktop {
-//     align-items: baseline;
-//   }
-// }
+.footer-wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+  @include desktop {
+    align-items: baseline;
+    gap: 94px;
+  }
+}
 
 .address {
   font-style: normal;
@@ -66,7 +72,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 60px;
   @include desktop {
     margin-top: 0;
     width: 570px;
