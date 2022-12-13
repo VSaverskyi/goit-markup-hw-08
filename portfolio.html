@@ -67,6 +67,77 @@
             </a>
           </li>
         </ul>
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <div class="mob-wrap">
+          <nav class="mob-nav">
+            <ul class="mob-nav__list">
+              <li class="mob-nav__item">
+                <a class="mob-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-nav__item">
+                <a class="mob-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-nav__item">
+                <a class="mob-nav__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <a class="mob-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            <a class="mob-mail" href="mailto:info@devstudio.com" lang="en">
+              info@devstudio.com
+            </a>
+            <ul class="mob-social">
+              <li class="mob-social__item">
+                <a
+                  class="mob-social__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-social__item">
+                <a
+                  class="mob-social__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-social__item">
+                <a
+                  class="mob-social__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-social__item">
+                <a
+                  class="mob-social__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -429,5 +500,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
