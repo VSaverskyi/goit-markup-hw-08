@@ -1,14 +1,26 @@
 .hero {
-  max-width: 1600px;
-  background-image: linear-gradient(
-      var(--background-color-hero),
-      var(--background-color-hero)
-    ),
-    url(../images/hero-background.jpg);
+  background-image: var(--grad), url(../../images/hero/hero-bg-mobile.jpg);
   background-color: var(--background-color-hero-second);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  background-position: center;
+  @include retina {
+    background-image: var(--grad), url(../../images/hero/hero-bg-mobile-2x.jpg);
+  }
+  @include mobile {
+    background-image: var(--grad), url(../../images/hero/hero-bg-tablet.jpg);
+    @include retina {
+      background-image: var(--grad),
+        url(../../images/hero/hero-bg-tablet-2x.jpg);
+    }
+  }
+  @include tablet {
+    background-image: var(--grad), url(../../images/hero/hero-bg-desktop.jpg);
+    @include retina {
+      background-image: var(--grad),
+        url(../../images/hero/hero-bg-desktop-2x.jpg);
+    }
+  }
 }
 .hero__container {
   padding-top: 118px;

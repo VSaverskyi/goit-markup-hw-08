@@ -219,7 +219,8 @@
           <ul class="work-examples">
             <li class="work-examples__item">
               <img
-                src="./images/box_1.jpg"
+                srcset="./images/works/box_1.jpg 1x, ./images/works/box_1_2x.jpg 2x"
+                src="./images/works/box_1.jpg"
                 alt="Розробник створює код"
                 width="370"
               />
@@ -227,6 +228,7 @@
             </li>
             <li class="work-examples__item">
               <img
+                srcset="./images/works/box_2.jpg 1x, ./images/works/box_2_2x.jpg 2x"
                 src="./images/box_2.jpg"
                 alt="Розробник створює адаптивну версію для смартфону"
                 width="370"
@@ -235,6 +237,7 @@
             </li>
             <li class="work-examples__item">
               <img
+                srcset="./images/works/box_3.jpg 1x, ./images/works/box_3_2x.jpg 2x"
                 src="./images/box_3.jpg"
                 alt="Розробник створює дизайн сайту"
                 width="370"
@@ -251,11 +254,16 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img
-                src="./images/team_card_1.jpg"
-                alt="Фото Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team_card_1.jpg 1x, ./images/team/team_card_1_2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team_card_1_tab.jpg 1x, ./images/team/team_card_1_tab_2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/team_card_1_mob.jpg 1x, ./images/team/team_card_1_mob_2x.jpg 2x">
+                <img
+                  src="./images/team/team_card_1.jpg"
+                  alt="Фото Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
               <div class="team-card__data">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__text" lang="en">Product Designer</p>
@@ -312,11 +320,16 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team_card_2.jpg"
-                alt="Фото Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team_card_2.jpg 1x, ./images/team/team_card_2_2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team_card_2_tab.jpg 1x, ./images/team/team_card_2_tab_2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/team_card_2_mob.jpg 1x, ./images/team/team_card_2_mob_2x.jpg 2x">
+                <img
+                  src="./images/team/team_card_2.jpg"
+                  alt="Фото Ольга Рєпіна"
+                  width="270"
+                />
+              </picture>
               <div class="team-card__data">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__text" lang="en">Frontend Developer</p>
@@ -373,11 +386,16 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team_card_3.jpg"
-                alt="Фото Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team_card_3.jpg 1x, ./images/team/team_card_3_2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team_card_3_tab.jpg 1x, ./images/team/team_card_3_tab_2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/team_card_3_mob.jpg 1x, ./images/team/team_card_3_mob_2x.jpg 2x">
+                <img
+                  src="./images/team_card_3.jpg"
+                  alt="Фото Микола Тарасов"
+                  width="270"
+                />
+              </picture>
               <div class="team-card__data">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__text" lang="en">Marketing</p>
@@ -434,11 +452,16 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team_card_4.jpg"
-                alt="Фото Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team_card_4.jpg 1x, ./images/team/team_card_4_2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team_card_4_tab.jpg 1x, ./images/team/team_card_4_tab_2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/team/team_card_4_mob.jpg 1x, ./images/team/team_card_4_mob_2x.jpg 2x">
+                <img
+                  src="./images/team_card_4.jpg"
+                  alt="Фото Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
               <div class="team-card__data">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__text" lang="en">UI Designer</p>
@@ -783,7 +806,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю
+              Погоджуюся з розсилкою та приймаю&#160
               <a href="#" class="modal-check__link">Умови договору</a>
             </label>
           </div>
@@ -792,6 +815,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

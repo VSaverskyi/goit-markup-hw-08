@@ -8,11 +8,13 @@
   transition: opacity 250ms var(--tra-cubic), visibility 250ms var(--tra-cubic);
 }
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  z-index: 1;
+  width: calc(100vw - 30px);
+  min-height: 609px;
+  // overflow: auto;
   padding: 40px;
   background-color: var(--background-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -21,6 +23,13 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition: transform 600ms var(--tra-cubic), opacity 600ms var(--tra-cubic);
+  @include mobile {
+    width: 450px;
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.2);
@@ -30,11 +39,14 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 12px;
+  @include desktop {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -143,12 +155,16 @@
 
 .modal-check__label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--color-gray);
   display: flex;
   align-items: center;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal-check__label .modal-check__icon {
   width: 16px;
@@ -179,10 +195,4 @@
 .modal__btn {
   margin: 0 auto;
   display: block;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
