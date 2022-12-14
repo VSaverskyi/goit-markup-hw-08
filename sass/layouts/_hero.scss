@@ -1,24 +1,22 @@
 .hero {
-  background-image: var(--grad), url(../../images/hero/hero-bg-mobile.jpg);
+  background-image: var(--grad), url(../images/hero/hero-bg-mobile.jpg);
   background-color: var(--background-color-hero-second);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @include retina {
-    background-image: var(--grad), url(../../images/hero/hero-bg-mobile-2x.jpg);
+    background-image: var(--grad), url(../images/hero/hero-bg-mobile-2x.jpg);
   }
   @include mobile {
-    background-image: var(--grad), url(../../images/hero/hero-bg-tablet.jpg);
+    background-image: var(--grad), url(../images/hero/hero-bg-tablet.jpg);
     @include retina {
-      background-image: var(--grad),
-        url(../../images/hero/hero-bg-tablet-2x.jpg);
+      background-image: var(--grad), url(../images/hero/hero-bg-tablet-2x.jpg);
     }
   }
   @include tablet {
-    background-image: var(--grad), url(../../images/hero/hero-bg-desktop.jpg);
+    background-image: var(--grad), url(../images/hero/hero-bg-desktop.jpg);
     @include retina {
-      background-image: var(--grad),
-        url(../../images/hero/hero-bg-desktop-2x.jpg);
+      background-image: var(--grad), url(../images/hero/hero-bg-desktop-2x.jpg);
     }
   }
 }
