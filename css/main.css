@@ -943,6 +943,11 @@ body {
   color: var(--title-color);
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .features-list__title {
+    text-align: center;
+  }
+}
 
 .features-list__text {
   font-size: 14px;
