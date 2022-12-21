@@ -27,7 +27,7 @@
     background-color: var(--color-portfolio-btn);
     border-radius: 4px;
     padding: 6px 22px;
-    display: block;
+    display: inline-block;
     transition: background-color 250ms var(--tra-cubic),
       color 250ms var(--tra-cubic), box-shadow 250ms var(--tra-cubic),
       outline 250ms var(--tra-cubic);
